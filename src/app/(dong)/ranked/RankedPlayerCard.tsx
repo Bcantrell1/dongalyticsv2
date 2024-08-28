@@ -72,7 +72,7 @@ export function RankedPlayerCard({ player, rank }: RankedPlayerProps) {
       <CardContent>
         <div className="grid grid-cols-2 gap-2">
           <div className="flex flex-col">
-            <span className="text-sm font-medium">Score</span>
+            <span className="text-sm font-medium">MMR</span>
             <span>{Math.round(player.score)}</span>
           </div>
           <div className="flex flex-col">
