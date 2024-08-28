@@ -6,8 +6,8 @@ import { Providers } from './providers'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Steam Auth App',
-  description: 'Next.js app with Steam authentication',
+  title: 'Dongalytics | 🍆 | For Team So Pure',
+  description: 'Check your dong size and current Rank. All from Turbo only matches.',
 }
 
 export default async function RootLayout({
