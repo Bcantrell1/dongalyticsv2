@@ -2,7 +2,7 @@
 const nextConfig = {
 	reactStrictMode: true,
 	images: {
-		domains: ['cdn.dota2.com']
+		domains: ['cdn.dota2.com', 'avatars.steamstatic.com']
 	},
   async rewrites() {
     return [

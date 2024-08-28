@@ -37,3 +37,28 @@ export function getRankName(rankTier: number | null): string {
   
   return "Unknown";
 }
+
+export type RankTier = 'Gigga Dong' | 'Nice Dong' | 'Standard Dong' | 'Boner' | 'Little Bony';
+
+export function determineRank(score: number): RankTier {
+  if (score > 10000) return 'Gigga Dong';
+  if (score > 8000) return 'Nice Dong';
+  if (score > 6000) return 'Standard Dong';
+  if (score > 4000) return 'Boner';
+  return 'Little Bony';
+}
+
+export function getRankImage(rank: RankTier): string {
+  switch (rank) {
+    case 'Gigga Dong':
+      return '/medals/gigga_dong.png';
+    case 'Nice Dong':
+      return '/medals/nice_dong.png';
+    case 'Standard Dong':
+      return '/medals/standard_dong.png';
+    case 'Boner':
+      return '/medals/boner.png';
+    case 'Little Bony':
+      return '/medals/little_bony.png';
+  }
+}

@@ -1,11 +1,8 @@
 import {
-	Bookmark,
 	LayoutGrid,
 	LucideIcon,
-	Settings,
-	SquarePen,
-	Tag,
-	Users
+	Medal,
+	Settings
 } from "lucide-react";
 
 type Submenu = {
@@ -37,6 +34,18 @@ export function getMenuList(pathname: string): Group[] {
           label: "Dashboard",
           active: pathname.includes("/dashboard"),
           icon: LayoutGrid,
+          submenus: []
+        }
+      ]
+    },
+    {
+      groupLabel: "",
+      menus: [
+        {
+          href: "/ranked",
+          label: "Ranked",
+          active: pathname.includes("/ranked"),
+          icon: Medal,
           submenus: []
         }
       ]
